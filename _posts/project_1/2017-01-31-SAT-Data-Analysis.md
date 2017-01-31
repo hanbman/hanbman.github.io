@@ -208,7 +208,7 @@ ax=sns.distplot(pdata["Rate"])
 ```
 
 
-![rate dist plot](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_31_0.png "rate dist plot")
+![output_31_0](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_31_0.png "output_31_0")
 
 
 ##### 15. Plot the Math distribution
