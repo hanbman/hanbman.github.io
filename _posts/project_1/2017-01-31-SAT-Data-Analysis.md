@@ -208,7 +208,7 @@ ax=sns.distplot(pdata["Rate"])
 ```
 
 
-![png](output_31_0.png)
+![rate dist plot](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_31_0.png)
 
 
 ##### 15. Plot the Math distribution
@@ -219,7 +219,7 @@ ax=sns.distplot(pdata["Math"])
 ```
 
 
-![png](output_33_0.png)
+![math dist plot](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_33_0.png)
 
 
 ##### 16. Plot the Verbal distribution
@@ -230,7 +230,7 @@ ax=sns.distplot(pdata["Verbal"])
 ```
 
 
-![png](output_35_0.png)
+![verbal dist plot](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_35_0.png)
 
 
 ##### 17. What is the typical assumption for data distribution?
@@ -304,7 +304,7 @@ plt.show()
 ```
 
 
-![png](output_41_0.png)
+![3 var regploat](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_41_0.png)
 
 
 ##### 20. Are there any interesting relationships to note?
@@ -326,7 +326,7 @@ plt.show()
 ```
 
 
-![png](output_43_0.png)
+![correlations](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_43_0.png)
 
 
 ##### 21. Create box plots for each variable. 
@@ -338,7 +338,7 @@ ax=sns.boxplot(data=test, palette="Set3")
 ```
 
 
-![png](output_45_0.png)
+![box plot](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_45_0.png)
 
 
 ##### BONUS: Using Tableau, create a heat map for each variable using a map of the US. 
@@ -362,13 +362,13 @@ plt.show()
 ```
 
 
-![png](output_47_0.png)
+![Verbal Heat Map Tableau](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_47_0.png)
 
 
 
-![png](output_47_1.png)
+![Math Heat Map Tableau](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_47_1.png)
 
 
 
-![png](output_47_2.png)
+![Rate Heat Map Tableau](https://github.com/hanbman/hanbman.github.io/blob/master/_posts/project_1/output_47_2.png)
 
