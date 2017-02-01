@@ -1,5 +1,107 @@
 
-# Project 1
+# My first project- analyzing SAT scores:
+    
+# I took a clean data set of SAT scores and used pandas to process this data. The pandas library within python allows
+# us to very effectively analyze, visualize, and understand the data at hand, expecially with such a clean data set.
+# This data contained 50 entries- a average verbal score, math score, and participation rate for each state, and one 
+# entry for the entire US. My goal for this analysis was to answer a few key questions:
+    
+# 1) What is the average scores across the nation?
+# 2) Which states performed best and worst?
+# 3) Is there a relationship between the verbal and math scores achieved by certain states, and the states participation
+# rate?
+
+# To view the distibution of scores, a box plot is a good way visualize our three variables:
+
+
+```python
+print("The average rate is", np.mean(pdata["Rate"]))
+print("The average verbal score is", np.mean(pdata["Verbal"]))
+print("The average math scores is", np.mean(pdata["Math"]))
+    
+test=pdata[["Rate","Verbal","Math"]]
+ax=sns.boxplot(data=test, palette="Set3")
+
+```
+
+#The average rate is 37% while the average score for math and verbal are remarkable similar, both at 532. These scores
+#are out of 800.
+
+#Looking at the top states for each variable: 
+
+```python
+
+pdata.sort(['Rate'], ascending=0).head(5)
+pdata.sort(['Verbal'], ascending=0).head(5)
+pdata.sort(['Math'], ascending=0).head(5)
+
+```
+
+
+#Rate: CT:82, NJ:81, MA:79, NY:77, NH:72
+#Verbal: IA:593, ND:592, WI:584, MN:580, MO:577
+#Math: IA:603, ND:599, WI:596, MN:589, IL:589
+
+#A trend begins to emerge: The top 4 states scoring in verbal and math are the same. That points to a relationship
+#states verbal and math score are correlated. At the same time, the participation rate for these four states are ver
+#low: IA- 5%, ND-4%, WI-6%, MN-9%
+
+```python
+
+test=pdata[["Rate","Verbal","Math"]]
+sns.pairplot(test, kind="reg")
+
+plt.show()
+
+def r2(x, y):
+   return stats.pearsonr(x, y)[0] ** 2
+#sns.jointplot(pdata["Verbal"], pdata["Math"], kind="reg", stat_func=r2)
+
+print(r2(pdata["Verbal"], pdata["Math"]))
+print(r2(pdata["Rate"], pdata["Math"]))
+print(r2(pdata["Rate"], pdata["Verbal"]))
+
+```
+
+
+#We can plot the combinations of 2 variable scatter plots among the three variables. Viewing the trend lines, it becomes
+#clear that math and verbal scores are positively correlated: the linear regression line is positive and the r squared value
+#is ~80%. This means there is a relatively strong relationship between the two variables, and those states who
+#score higher in verbal also do well in math.
+
+#Looking at rate vs verbal and rate vs math, there is a negative correlation between those sets of variables. 
+#Rate and verbal has a strong linear relationship with an r squared of ~79% while verbal and math has a weaker
+#relationship with r squared value at 60%. The negative relationship between rate and both verbal and math
+#suggests that states with lower participation have higher scoring overall.
+
+#Why would this be? One way to view this relationships is that the few students who do take the SAT
+#in states with low participation are the better students in that state. Why would only the better students
+#be taking the SAT in some states while all students in other? Well looking at the distribution of scoring rates
+#geographically:
+
+```python
+
+img = mpimg.imread('/Users/hanman/DSI-NYC-4/project/project-1-sat-scores/assets/Rate_Heat_Map.png')
+plt.imshow(img)
+plt.show()
+
+```
+
+#we see that states with low participation- like Iowa, North Dakota, Wisconson, and Minnesota, reside in the midwest
+#this disproportionate representation in the midwest makes sense. Midwestern states actually primarily require a 
+#different type of test- the ACT- for college entrance, and not the SAT- which is required in states with high 
+#participation rates like CT, NJ, MA, NY, and NH. The students who are are taking the SAT in midwestern states
+#are those who do so by choice, and those students who choose to take the SAT are typically taking the test to apply
+#to out of state schools which do require the SAT. These students who elect to take the SAT are those whith the luxury
+#to take more than one test and apply for more schools because they are better students. This phenomenon ultimately
+#is not an indicator that these states have better students, but more of a selection bias, where only the best students
+#have chosen to take the SAT in the first place.
+    
+
+
+#### SEE BELOW FOR DETAILED ANALYSIS STEPS:
+
+
 
 ## Step 1: Open the `sat_scores.csv` file. Investigate the data, and answer the questions below.
 
