@@ -1,17 +1,13 @@
 
-# My first project- analyzing SAT scores:
+#### My first project- analyzing SAT scores:
     
-# I took a clean data set of SAT scores and used pandas to process this data. The pandas library within python allows
-# us to very effectively analyze, visualize, and understand the data at hand, expecially with such a clean data set.
-# This data contained 50 entries- a average verbal score, math score, and participation rate for each state, and one 
-# entry for the entire US. My goal for this analysis was to answer a few key questions:
+I took a clean data set of SAT scores and used pandas to process this data. The pandas library within python allows  us to very effectively analyze, visualize, and understand the data at hand, expecially with such a clean data set. This data contained 50 entries- a average verbal score, math score, and participation rate for each state, and one entry for the entire US. My goal for this analysis was to answer a few key questions:
     
-# 1) What is the average scores across the nation?
-# 2) Which states performed best and worst?
-# 3) Is there a relationship between the verbal and math scores achieved by certain states, and the states participation
-# rate?
+ 1) What is the average scores across the nation?
+ 2) Which states performed best and worst?
+ 3) Is there a relationship between the verbal and math scores achieved by certain states, and the states participation rate?
 
-# To view the distibution of scores, a box plot is a good way visualize our three variables:
+To view the distibution of scores, a box plot is a good way visualize our three variables:
 
 
 ```python
