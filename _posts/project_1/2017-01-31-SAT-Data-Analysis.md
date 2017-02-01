@@ -5,9 +5,9 @@ I took a clean data set of SAT scores and used pandas to process this data. The 
     
 ##### 1) What is the average scores across the nation?
 
-2) Which states performed best and worst?
+##### 2) Which states performed best and worst?
 
-3) Is there a relationship between the verbal and math scores achieved by certain states, and the states participation rate?
+##### 3) Is there a relationship between the verbal and math scores achieved by certain states, and the states participation rate?
 
 To view the distibution of scores, a box plot is a good way visualize our three variables:
 
@@ -36,7 +36,9 @@ pdata.sort(['Math'], ascending=0).head(5)
 
 
 Rate: CT:82, NJ:81, MA:79, NY:77, NH:72
+
 Verbal: IA:593, ND:592, WI:584, MN:580, MO:577
+
 Math: IA:603, ND:599, WI:596, MN:589, IL:589
 
 A trend begins to emerge: The top 4 states scoring in verbal and math are the same. That points to a relationship states verbal and math score are correlated. At the same time, the participation rate for these four states are very low: IA- 5%, ND-4%, WI-6%, MN-9%
