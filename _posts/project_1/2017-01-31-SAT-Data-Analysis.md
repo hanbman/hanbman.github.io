@@ -4,8 +4,10 @@
 I took a clean data set of SAT scores and used pandas to process this data. The pandas library within python allows  us to very effectively analyze, visualize, and understand the data at hand, expecially with such a clean data set. This data contained 50 entries- a average verbal score, math score, and participation rate for each state, and one entry for the entire US. My goal for this analysis was to answer a few key questions:
     
 ##### 1) What is the average scores across the nation?
-##### 2) Which states performed best and worst?
-#####  3) Is there a relationship between the verbal and math scores achieved by certain states, and the states participation rate?
+
+2) Which states performed best and worst?
+
+3) Is there a relationship between the verbal and math scores achieved by certain states, and the states participation rate?
 
 To view the distibution of scores, a box plot is a good way visualize our three variables:
 
@@ -75,7 +77,7 @@ plt.show()
 
 ```
 
-we see that states with low participation- like Iowa, North Dakota, Wisconson, and Minnesota, reside in the midwest
+We see that states with low participation- like Iowa, North Dakota, Wisconson, and Minnesota, reside in the midwest
 this disproportionate representation in the midwest makes sense. Midwestern states actually primarily require a 
 different type of test- the ACT- for college entrance, and not the SAT- which is required in states with high 
 participation rates like CT, NJ, MA, NY, and NH. The students who are are taking the SAT in midwestern states
