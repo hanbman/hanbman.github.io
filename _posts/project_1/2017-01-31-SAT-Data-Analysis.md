@@ -302,7 +302,7 @@ ax=sns.distplot(pdata["Rate"])
 ```
 
 
-![output_31_0](.../images/output_31_0.png)
+![output_31_0](output_31_0.png)
 
 
 ##### 15. Plot the Math distribution
@@ -313,7 +313,7 @@ ax=sns.distplot(pdata["Math"])
 ```
 
 
-![math dist plot](.../images/output_33_0.png)
+![math dist plot](output_33_0.png)
 
 
 ##### 16. Plot the Verbal distribution
@@ -324,7 +324,7 @@ ax=sns.distplot(pdata["Verbal"])
 ```
 
 
-![verbal dist plot](.../images/output_35_0.png)
+![verbal dist plot](output_35_0.png)
 
 
 ##### 17. What is the typical assumption for data distribution?
@@ -398,7 +398,7 @@ plt.show()
 ```
 
 
-![3 var regploat](.../images/output_41_0.png)
+![3 var regploat](output_41_0.png)
 
 
 ##### 20. Are there any interesting relationships to note?
@@ -420,7 +420,7 @@ plt.show()
 ```
 
 
-![correlations](.../images/output_43_0.png)
+![correlations](output_43_0.png)
 
 
 ##### 21. Create box plots for each variable. 
@@ -432,7 +432,7 @@ ax=sns.boxplot(data=test, palette="Set3")
 ```
 
 
-![box plot](.../images/output_45_0.png)
+![box plot](output_45_0.png)
 
 
 ##### BONUS: Using Tableau, create a heat map for each variable using a map of the US. 
@@ -456,13 +456,13 @@ plt.show()
 ```
 
 
-![Verbal Heat Map Tableau](.../images/output_47_0.png)
+![Verbal Heat Map Tableau](output_47_0.png)
 
 
 
-![Math Heat Map Tableau](.../images/output_47_1.png)
+![Math Heat Map Tableau](output_47_1.png)
 
 
 
-![Rate Heat Map Tableau](.../images/output_47_2.png)
+![Rate Heat Map Tableau](output_47_2.png)
 
